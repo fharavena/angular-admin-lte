@@ -5,12 +5,18 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./starter/starter.module').then(m => m.StarterModule)
+    loadChildren: () => import('./components/starter.module').then(m => m.StarterModule)
   },
   {
     path: 'starter',
-    loadChildren: () => import('./starter/starter.module').then(m => m.StarterModule)
+    loadChildren: () => import('./components/starter.module').then(m => m.StarterModule)
+  },
+  {
+    path: '**',
+    loadChildren: () => import('./components/starter.module').then(m => m.StarterModule)
   }
+
+
 ];
 
 @NgModule({

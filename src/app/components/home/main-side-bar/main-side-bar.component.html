@@ -33,17 +33,24 @@
           </a>
           <ul class="nav nav-treeview">
             <li class="nav-item">
-              <a href="#" class="nav-link active">
+              <a [routerLink]="['/']"  routerLinkActive="active" class="nav-link" [routerLinkActiveOptions]="{ exact: true }">
                 <i class="far fa-circle nav-icon"></i>
                 <p>Active Page</p>
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a [routerLink]="[ '/peque']" routerLinkActive="active" class="nav-link" >
                 <i class="far fa-circle nav-icon"></i>
                 <p>Inactive Page</p>
               </a>
             </li>
+            <li class="nav-item">
+              <a [routerLink]="[ '/prueba']" routerLinkActive="active" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Pruebas</p>
+              </a>
+            </li>
+
           </ul>
         </li>
         <li class="nav-item">
