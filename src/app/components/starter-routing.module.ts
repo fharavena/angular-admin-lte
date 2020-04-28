@@ -9,8 +9,6 @@ import { UsuarioComponent } from './usuario/usuario.component';
 import { RegistroComponent } from './registro/registro.component';
 import { CursoComponent } from './curso/curso.component';
 import { ElementosLTEComponent } from './elementos-lte/elementos-lte.component';
-import { WeatherComponent } from './weather/weather.component';
-
 
 const routes: Routes = [
   {
@@ -49,10 +47,6 @@ const routes: Routes = [
       {
         path: 'elementos',
         component: ElementosLTEComponent
-      },
-      {
-        path: 'weather',
-        component: WeatherComponent
       }
     ]
   },

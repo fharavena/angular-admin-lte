@@ -9,17 +9,14 @@ import { MainSideBarComponent } from "./home/main-side-bar/main-side-bar.compone
 import { NavBarComponent } from "./home/nav-bar/nav-bar.component";
 import { FooterComponent } from "./home/footer/footer.component";
 import { CalendarComponent } from "./widgets/calendar/calendar.component";
-import { AreaComponent } from "./widgets/area/area.component";
 import { PruebaComponent } from "./prueba/prueba.component";
 import { CursoComponent } from "./curso/curso.component";
 import { RegistroComponent } from "./registro/registro.component";
 import { ElementosLTEComponent } from "./elementos-lte/elementos-lte.component";
-import { WeatherComponent } from "./weather/weather.component";
 import { ChartsModule } from "ng2-charts";
-import { LineComponent } from './widgets/line/line.component';
-import { DonutcharComponent } from './widgets/donutchar/donutchar.component';
-import { BarcharComponent } from './widgets/barchar/barchar.component';
-import { BarcharstackComponent } from './widgets/barcharstack/barcharstack.component';
+import { RendercharComponent } from './widgets/renderchar/renderchar.component';
+import { TableComponent } from './widgets/table/table.component';
+import { GalleryComponent } from './widgets/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -30,16 +27,13 @@ import { BarcharstackComponent } from './widgets/barcharstack/barcharstack.compo
     NavBarComponent,
     FooterComponent,
     CalendarComponent,
-    AreaComponent,
     PruebaComponent,
     CursoComponent,
     RegistroComponent,
     ElementosLTEComponent,
-    WeatherComponent,
-    LineComponent,
-    DonutcharComponent,
-    BarcharComponent,
-    BarcharstackComponent,
+    RendercharComponent,
+    TableComponent,
+    GalleryComponent,
   ],
   imports: [CommonModule, StarterRoutingModule, ChartsModule],
 })
