@@ -14,9 +14,11 @@ import { CursoComponent } from "./curso/curso.component";
 import { RegistroComponent } from "./registro/registro.component";
 import { ElementosLTEComponent } from "./elementos-lte/elementos-lte.component";
 import { ChartsModule } from "ng2-charts";
-import { RendercharComponent } from './widgets/renderchar/renderchar.component';
-import { TableComponent } from './widgets/table/table.component';
-import { GalleryComponent } from './widgets/gallery/gallery.component';
+import { RendercharComponent } from "./widgets/renderchar/renderchar.component";
+import { TableComponent } from "./widgets/table/table.component";
+import { GalleryComponent } from "./widgets/gallery/gallery.component";
+import { FullCalendarModule } from "@fullcalendar/angular";
+import { DataTablesModule } from 'angular-datatables';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,12 @@ import { GalleryComponent } from './widgets/gallery/gallery.component';
     TableComponent,
     GalleryComponent,
   ],
-  imports: [CommonModule, StarterRoutingModule, ChartsModule],
+  imports: [
+    CommonModule,
+    StarterRoutingModule,
+    ChartsModule,
+    FullCalendarModule,
+    DataTablesModule,
+  ],
 })
 export class StarterModule {}
