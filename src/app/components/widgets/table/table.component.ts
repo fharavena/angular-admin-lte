@@ -226,34 +226,26 @@ export class TableComponent implements OnInit {
           data: "firstName",
           orderable: true,
           visible: true,
-          class: "none",
         },
         {
           title: "Last name",
           data: "lastName",
           orderable: true,
           visible: true,
-          class: "none",
         },
       ],
+      language: {
+        lengthMenu: "Mostrar _MENU_ filas por página",
+        zeroRecords: "Nada ha sido encontrado",
+        info: "Página _PAGE_ de _PAGES_",
+        infoEmpty: "Sin información",
+        infoFiltered: "(Filtrado de _MAX_ registros totales)",
+        search: "",
+        paginate:{previous: "<", next: ">", first: "primera", last: "ultima"},
+        searchPlaceholder: "Buscar..."
+      },
+      autoWidth: true,
       responsive: true,
-      // Declare the use of the extension in the dom parameter
-      dom: "Bfrtip",
-      // Configure the buttons
-      buttons: [
-        { extend: "colvis", text: "columna", className: "btn-tabla-opcion" },
-        { extend: "copy", text: "copiar", className: "btn-tabla-opcion" },
-        { extend: "print", text: "imprimir", className: "btn-tabla-opcion" },
-        { extend: "csv", text: "csv", className: "btn-tabla-opcion" },
-        { extend: "excel", text: "excel", className: "btn-tabla-opcion" },
-        {
-          text: "Some button",
-          key: "1",
-          action: function (e, dt, node, config) {
-            alert("Button activated");
-          },
-        },
-      ],
     };
   }
 

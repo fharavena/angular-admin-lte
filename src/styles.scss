@@ -29,3 +29,21 @@ Admin LTE customization
 
 @import '../node_modules/@fullcalendar/core/main.css';
 @import '../node_modules/@fullcalendar/daygrid/main.css';
+
+.paginate_button{
+  cursor: pointer !important;
+  color: #337ab7 !important;
+  background-color: #fff !important;
+  border: 1px solid #ddd !important;
+ }
+ .paginate_button:hover{
+   background: #ddd !important;
+ }
+ .paginate_button.current{
+  color: #fff !important;
+  cursor: default !important;
+  background-color: #337ab7 !important;
+  background-image: none !important;
+  border-color: #337ab7 !important;
+ }
+
